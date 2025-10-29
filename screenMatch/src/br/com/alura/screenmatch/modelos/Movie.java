@@ -1,6 +1,9 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Movie extends Title {
+import br.com.alura.screenmatch.calculator.Classifying;
+
+// Movie herda caracteristicas de Title
+public class Movie extends Title implements Classifying {
     private String director;
 
     public String getDirector() {
@@ -9,5 +12,10 @@ public class Movie extends Title {
 
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public int getClassifying() {
+        return (int) getAverageReview() / 2;
     }
 }

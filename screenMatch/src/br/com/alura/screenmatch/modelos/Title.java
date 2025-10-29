@@ -9,7 +9,7 @@ public class Title {
     private int totalReviews;
 
 
-    // Set serve para passar um valor, ex: armazenar o nome de um filme na variável name
+    // Set/setters serve para passar um valor, ex: armazenar o nome de um filme na variável name
     public void setName(String name) {
         this.name = name;
     }
@@ -36,7 +36,7 @@ public class Title {
         System.out.println("Ano de lançamento: " + releaseYear);
     }
 
-    // Get serve para retornar/imprimir uma informação/soma/dado com segurança
+    // Get/getters serve para retornar/imprimir uma informação/soma/dado com segurança
     public double getAverageReview() {
         return sumReview/totalReviews;
     }
@@ -55,10 +55,6 @@ public class Title {
 
     public int getMovieTimeMinutes() {
         return movieTimeMinutes;
-    }
-
-    public int getMovieTimeHours() {
-        return this.movieTimeMinutes / 60;
     }
 
     public int getTotalReviews() {

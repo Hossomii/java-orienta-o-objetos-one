@@ -1,5 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
+// TVserie herda caracteristicas de Title
 public class TVserie extends Title {
     private int seasons;
     private int episodePerSeason;
